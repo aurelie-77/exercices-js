@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice de pourboir</title>
     <link rel="stylesheet" href="style.css">
-    <title>Bienvenue</title>
-
 </head>
 <body>
-    <h1>Bienvenue sur la page d'accueil !</h1>
-    <form id="myform">
-        <input type="text"id="name" placeholder="entrez votre nom">
-        <input type="submit" value="Valider">
+    <h1>Calculatrice de pourboir</h1>
+
+    <form>
+        <label for="amount">Montant de l'addition</label>
+        <input type="number" id="amount" name="amount"><br>
+
+        <label for="percentage">Pourcentage de pourboire:</label>
+        <input type="number" id="percentage"name="percentage"><br>
+
+        <button type="submit">Calculer le pourboire</button>
     </form>
-    
-    <p id="message"></p>
+
+    <div id="result"></div>
+
 
 
     <script src="script.js"></script>
